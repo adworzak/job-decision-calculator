@@ -27,7 +27,7 @@ export default function JobDecisionLossCalculator() {
   const [openingBalance, setOpeningBalance] = useState<string>("");
 
   const parse = (v: string) => {
-    const n = Number(String(v).replace(/[^0-9.\-]/g, ""));
+    const n = Number(String(v).replace(/[^0-9.-]/g, ""));
     return isFinite(n) ? n : 0;
   };
 
